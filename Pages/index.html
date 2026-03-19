@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Picker</title>
+    <link rel="stylesheet" href="../Styles/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Color Scheme Picker</h1>
+      <p>Choose your colors and see them in action</p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <h2>Pick Your Colors</h2>
+        <div class="color-inputs">
+          <div class="input-group">
+            <label for="bgColor">Background Color</label>
+            <input type="color" id="bgColor" value="#f0f0f0">
+          </div>
+          <div class="input-group">
+            <label for="windowColor">Window Color</label>
+            <input type="color" id="windowColor" value="#ffffff">
+          </div>
+          <div class="input-group">
+            <label for="textColor">Text Color</label>
+            <input type="color" id="textColor" value="#333333">
+          </div>
+          <div class="input-group">
+            <label for="accentColor">Accent Color</label>
+            <input type="color" id="accentColor" value="#4a90d9">
+          </div>
+        </div>
+        <button id="resetBtn">Reset Colors</button>
+      </section>
+
+      <section class="preview">
+        <h2>Preview</h2>
+        <div class="window-grid">
+          <div class="window" id="window1">
+            <div class="window-bar">
+            </div>
+            <h3>Welcome</h3>
+            <p>This is what a welcome section might look like with your chosen color scheme.</p>
+          </div>
+          <div class="window" id="window2">
+            <div class="window-bar">
+            </div>
+            <h3>About</h3>
+            <p>Color schemes help set the mood and feel of a website</p>
+          </div>
+          <div class="window" id="window3">
+            <div class="window-bar">
+            </div>
+            <h3>Contact</h3>
+            <p>A good color scheme makes text easy to read and buttons easy to find.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="saved-schemes">
+        <h2>Colorful Schemes</h2>
+        <div class="scheme-buttons">
+          <button class="scheme-btn" id="oceanBtn">Ocean</button>
+          <button class="scheme-btn" id="sunsetBtn">Sunset</button>
+          <button class="scheme-btn" id="forestBtn">Forest</button>
+          <button class="scheme-btn" id="darkBtn">Grape</button>
+        </div>
+      </section>
+
+      <section class="current-scheme">
+        <h2>Your Current Colors</h2>
+        <div class="color-display">
+          <div class="color-swatch" id="swatchBg">
+            <p id="labelBg">#f0f0f0</p>
+            <p>Background</p>
+          </div>
+          <div class="color-swatch" id="swatchWindow">
+            <p id="labelWindow">#ffffff</p>
+            <p>Window</p>
+          </div>
+          <div class="color-swatch" id="swatchText">
+            <p id="labelText">#333333</p>
+            <p>Text</p>
+          </div>
+          <div class="color-swatch" id="swatchAccent">
+            <p id="labelAccent">#4a90d9</p>
+            <p>Accent</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Color Scheme Picker - Pick the perfect palette for your next project</p>
+    </footer>
+
+    <script src="../Scripts/index.js"></script>
+  </body>
+</html>
